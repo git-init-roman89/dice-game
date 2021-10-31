@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dice game</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-container">
+      <form id="player1Name">
+        <h4>Player's 1 name</h4>
+        <div class="form-control">
+          <input type="text" id="input-name1" class="playerName" placeholder="type!" />
+          <button type="submit" class="smallBtn">save</button>
+        </div>
+      </form>
+      <form id="player2Name">
+        <h4>Player's 2 name</h4>
+        <div class="form-control">
+          <input type="text" id="input-name2" class="playerName" placeholder="type!" />
+          <button type="submit" class="smallBtn">save</button>
+        </div>
+      </form>
+    </div>
+    <h1 id="message">Please, enter your names</h1>
+    <div class="players">
+      <div id="player1">
+        <h1>Score:
+          <span id="player1Scoreboard">0</span>
+        </h1>
+        <div id="player1Dice" class="dice active">
+          <div class="gridOne grid">
+          </div>
+        </div>
+      </div>
+      <div id="player2">
+        <h1>Score:
+          <span id="player2Scoreboard">0</span>
+        </h1>
+        <div id="player2Dice" class="dice">
+          <div class="gridTwo grid">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button id="rollBtn">Roll Dice 🎲</button>
+    <button id="resetBtn">Reset Game 🔁</button>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
